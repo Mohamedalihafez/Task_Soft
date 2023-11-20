@@ -1,0 +1,870 @@
+{
+	"info": {
+		"_postman_id": "a2cfa500-be79-44d1-8196-0474f91b114a",
+		"name": "SoftExpert",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20175952"
+	},
+	"item": [
+		{
+			"name": "loginApi",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "*",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login?email=admin@admin.com&password=password",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "admin@admin.com"
+						},
+						{
+							"key": "password",
+							"value": "password"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "operatorCreate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/operator/create?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzAwNTE0NTY0LCJleHAiOjE3MDA1MTgxNjQsIm5iZiI6MTcwMDUxNDU2NCwianRpIjoiYzN1YVQ4eVBabHJJbmVkcSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Enr0BFimnx2YBKelfPPkc74cgKSCAiRMjPab3rB9FOc&name=operator&email=operator@test.com&phone=01026036513&password=12345678&password_confirmation=12345678",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"operator",
+						"create"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzAwNTE0NTY0LCJleHAiOjE3MDA1MTgxNjQsIm5iZiI6MTcwMDUxNDU2NCwianRpIjoiYzN1YVQ4eVBabHJJbmVkcSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Enr0BFimnx2YBKelfPPkc74cgKSCAiRMjPab3rB9FOc"
+						},
+						{
+							"key": "name",
+							"value": "operator"
+						},
+						{
+							"key": "email",
+							"value": "operator@test.com"
+						},
+						{
+							"key": "phone",
+							"value": "01026036513"
+						},
+						{
+							"key": "password",
+							"value": "12345678"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "12345678"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "operatorUpdate",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/operator/update?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzAwNTE0NTY0LCJleHAiOjE3MDA1MTgxNjQsIm5iZiI6MTcwMDUxNDU2NCwianRpIjoiYzN1YVQ4eVBabHJJbmVkcSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Enr0BFimnx2YBKelfPPkc74cgKSCAiRMjPab3rB9FOc&name=operatorname&id=3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"operator",
+						"update"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzAwNTE0NTY0LCJleHAiOjE3MDA1MTgxNjQsIm5iZiI6MTcwMDUxNDU2NCwianRpIjoiYzN1YVQ4eVBabHJJbmVkcSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Enr0BFimnx2YBKelfPPkc74cgKSCAiRMjPab3rB9FOc"
+						},
+						{
+							"key": "name",
+							"value": "operatorname"
+						},
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "operatorDelete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/operator/update?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzAwNTE0NTY0LCJleHAiOjE3MDA1MTgxNjQsIm5iZiI6MTcwMDUxNDU2NCwianRpIjoiYzN1YVQ4eVBabHJJbmVkcSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Enr0BFimnx2YBKelfPPkc74cgKSCAiRMjPab3rB9FOc&id=3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"operator",
+						"update"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzAwNTE0NTY0LCJleHAiOjE3MDA1MTgxNjQsIm5iZiI6MTcwMDUxNDU2NCwianRpIjoiYzN1YVQ4eVBabHJJbmVkcSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Enr0BFimnx2YBKelfPPkc74cgKSCAiRMjPab3rB9FOc"
+						},
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "operatorGetOne",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/operator/get?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzAwNTE0NTY0LCJleHAiOjE3MDA1MTgxNjQsIm5iZiI6MTcwMDUxNDU2NCwianRpIjoiYzN1YVQ4eVBabHJJbmVkcSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Enr0BFimnx2YBKelfPPkc74cgKSCAiRMjPab3rB9FOc&id=3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"operator",
+						"get"
+					],
+					"query": [
+						{
+							"key": "entity_id",
+							"value": "8",
+							"disabled": true
+						},
+						{
+							"key": "attribute_ids[]",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "attribute_ids[]",
+							"value": "2",
+							"disabled": true
+						},
+						{
+							"key": "values[]",
+							"value": "mohamed",
+							"disabled": true
+						},
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzAwNTE0NTY0LCJleHAiOjE3MDA1MTgxNjQsIm5iZiI6MTcwMDUxNDU2NCwianRpIjoiYzN1YVQ4eVBabHJJbmVkcSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Enr0BFimnx2YBKelfPPkc74cgKSCAiRMjPab3rB9FOc"
+						},
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "operatorGetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/operator/all?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzAwNTE0NTY0LCJleHAiOjE3MDA1MTgxNjQsIm5iZiI6MTcwMDUxNDU2NCwianRpIjoiYzN1YVQ4eVBabHJJbmVkcSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Enr0BFimnx2YBKelfPPkc74cgKSCAiRMjPab3rB9FOc",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"operator",
+						"all"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzAwNTE0NTY0LCJleHAiOjE3MDA1MTgxNjQsIm5iZiI6MTcwMDUxNDU2NCwianRpIjoiYzN1YVQ4eVBabHJJbmVkcSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Enr0BFimnx2YBKelfPPkc74cgKSCAiRMjPab3rB9FOc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "entityCreate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/entity/create?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzAwNTE0NTY0LCJleHAiOjE3MDA1MTgxNjQsIm5iZiI6MTcwMDUxNDU2NCwianRpIjoiYzN1YVQ4eVBabHJJbmVkcSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Enr0BFimnx2YBKelfPPkc74cgKSCAiRMjPab3rB9FOc&name=Student",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"entity",
+						"create"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzAwNTE0NTY0LCJleHAiOjE3MDA1MTgxNjQsIm5iZiI6MTcwMDUxNDU2NCwianRpIjoiYzN1YVQ4eVBabHJJbmVkcSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Enr0BFimnx2YBKelfPPkc74cgKSCAiRMjPab3rB9FOc"
+						},
+						{
+							"key": "name",
+							"value": "Student"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "entityUpdate",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/entity/update?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzAwNTE0NTY0LCJleHAiOjE3MDA1MTgxNjQsIm5iZiI6MTcwMDUxNDU2NCwianRpIjoiYzN1YVQ4eVBabHJJbmVkcSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Enr0BFimnx2YBKelfPPkc74cgKSCAiRMjPab3rB9FOc&name=entityname&id=1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"entity",
+						"update"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzAwNTE0NTY0LCJleHAiOjE3MDA1MTgxNjQsIm5iZiI6MTcwMDUxNDU2NCwianRpIjoiYzN1YVQ4eVBabHJJbmVkcSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Enr0BFimnx2YBKelfPPkc74cgKSCAiRMjPab3rB9FOc"
+						},
+						{
+							"key": "name",
+							"value": "entityname"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "entityDelete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/entity/delete?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzAwNTE0NTY0LCJleHAiOjE3MDA1MTgxNjQsIm5iZiI6MTcwMDUxNDU2NCwianRpIjoiYzN1YVQ4eVBabHJJbmVkcSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Enr0BFimnx2YBKelfPPkc74cgKSCAiRMjPab3rB9FOc&id=1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"entity",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzAwNTE0NTY0LCJleHAiOjE3MDA1MTgxNjQsIm5iZiI6MTcwMDUxNDU2NCwianRpIjoiYzN1YVQ4eVBabHJJbmVkcSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Enr0BFimnx2YBKelfPPkc74cgKSCAiRMjPab3rB9FOc"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "entityGetOne",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/entity/get?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzAwNTE0NTY0LCJleHAiOjE3MDA1MTgxNjQsIm5iZiI6MTcwMDUxNDU2NCwianRpIjoiYzN1YVQ4eVBabHJJbmVkcSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Enr0BFimnx2YBKelfPPkc74cgKSCAiRMjPab3rB9FOc&id=1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"entity",
+						"get"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzAwNTE0NTY0LCJleHAiOjE3MDA1MTgxNjQsIm5iZiI6MTcwMDUxNDU2NCwianRpIjoiYzN1YVQ4eVBabHJJbmVkcSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Enr0BFimnx2YBKelfPPkc74cgKSCAiRMjPab3rB9FOc"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "entityGetAll",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/entity/all?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzAwNTE0NTY0LCJleHAiOjE3MDA1MTgxNjQsIm5iZiI6MTcwMDUxNDU2NCwianRpIjoiYzN1YVQ4eVBabHJJbmVkcSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Enr0BFimnx2YBKelfPPkc74cgKSCAiRMjPab3rB9FOc",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"entity",
+						"all"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzAwNTE0NTY0LCJleHAiOjE3MDA1MTgxNjQsIm5iZiI6MTcwMDUxNDU2NCwianRpIjoiYzN1YVQ4eVBabHJJbmVkcSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Enr0BFimnx2YBKelfPPkc74cgKSCAiRMjPab3rB9FOc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "attributeCreate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/attribute/create?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzAwNTE0NTY0LCJleHAiOjE3MDA1MTgxNjQsIm5iZiI6MTcwMDUxNDU2NCwianRpIjoiYzN1YVQ4eVBabHJJbmVkcSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Enr0BFimnx2YBKelfPPkc74cgKSCAiRMjPab3rB9FOc&name=Name&entity_id=1&type=String",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"attribute",
+						"create"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzAwNTE0NTY0LCJleHAiOjE3MDA1MTgxNjQsIm5iZiI6MTcwMDUxNDU2NCwianRpIjoiYzN1YVQ4eVBabHJJbmVkcSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Enr0BFimnx2YBKelfPPkc74cgKSCAiRMjPab3rB9FOc"
+						},
+						{
+							"key": "name",
+							"value": "Name"
+						},
+						{
+							"key": "entity_id",
+							"value": "1"
+						},
+						{
+							"key": "type",
+							"value": "String"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "attributeUpdate",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/attribute/update?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzAwNTE0NTY0LCJleHAiOjE3MDA1MTgxNjQsIm5iZiI6MTcwMDUxNDU2NCwianRpIjoiYzN1YVQ4eVBabHJJbmVkcSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Enr0BFimnx2YBKelfPPkc74cgKSCAiRMjPab3rB9FOc&id=1&name=1312",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"attribute",
+						"update"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzAwNTE0NTY0LCJleHAiOjE3MDA1MTgxNjQsIm5iZiI6MTcwMDUxNDU2NCwianRpIjoiYzN1YVQ4eVBabHJJbmVkcSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Enr0BFimnx2YBKelfPPkc74cgKSCAiRMjPab3rB9FOc"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						},
+						{
+							"key": "name",
+							"value": "1312"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "attributeDelete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/attribute/delete?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzAwNTE0NTY0LCJleHAiOjE3MDA1MTgxNjQsIm5iZiI6MTcwMDUxNDU2NCwianRpIjoiYzN1YVQ4eVBabHJJbmVkcSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Enr0BFimnx2YBKelfPPkc74cgKSCAiRMjPab3rB9FOc&id=1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"attribute",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzAwNTE0NTY0LCJleHAiOjE3MDA1MTgxNjQsIm5iZiI6MTcwMDUxNDU2NCwianRpIjoiYzN1YVQ4eVBabHJJbmVkcSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Enr0BFimnx2YBKelfPPkc74cgKSCAiRMjPab3rB9FOc"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "attributeGetOne",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/attribute/get?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzAwNTE0NTY0LCJleHAiOjE3MDA1MTgxNjQsIm5iZiI6MTcwMDUxNDU2NCwianRpIjoiYzN1YVQ4eVBabHJJbmVkcSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Enr0BFimnx2YBKelfPPkc74cgKSCAiRMjPab3rB9FOc&id=1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"attribute",
+						"get"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzAwNTE0NTY0LCJleHAiOjE3MDA1MTgxNjQsIm5iZiI6MTcwMDUxNDU2NCwianRpIjoiYzN1YVQ4eVBabHJJbmVkcSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Enr0BFimnx2YBKelfPPkc74cgKSCAiRMjPab3rB9FOc"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "attributeGetAll",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/attribute/all?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzAwNTE0NTY0LCJleHAiOjE3MDA1MTgxNjQsIm5iZiI6MTcwMDUxNDU2NCwianRpIjoiYzN1YVQ4eVBabHJJbmVkcSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Enr0BFimnx2YBKelfPPkc74cgKSCAiRMjPab3rB9FOc",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"attribute",
+						"all"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzAwNTE0NTY0LCJleHAiOjE3MDA1MTgxNjQsIm5iZiI6MTcwMDUxNDU2NCwianRpIjoiYzN1YVQ4eVBabHJJbmVkcSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Enr0BFimnx2YBKelfPPkc74cgKSCAiRMjPab3rB9FOc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "entitiyOperator",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/entitiyOperator/?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzAwNTE0NTY0LCJleHAiOjE3MDA1MTgxNjQsIm5iZiI6MTcwMDUxNDU2NCwianRpIjoiYzN1YVQ4eVBabHJJbmVkcSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Enr0BFimnx2YBKelfPPkc74cgKSCAiRMjPab3rB9FOc",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"entitiyOperator",
+						""
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzAwNTE0NTY0LCJleHAiOjE3MDA1MTgxNjQsIm5iZiI6MTcwMDUxNDU2NCwianRpIjoiYzN1YVQ4eVBabHJJbmVkcSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Enr0BFimnx2YBKelfPPkc74cgKSCAiRMjPab3rB9FOc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "entitiyOperatorAttribute",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/entitiyOperator/all?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzAwNTE0NTY0LCJleHAiOjE3MDA1MTgxNjQsIm5iZiI6MTcwMDUxNDU2NCwianRpIjoiYzN1YVQ4eVBabHJJbmVkcSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Enr0BFimnx2YBKelfPPkc74cgKSCAiRMjPab3rB9FOc",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"entitiyOperator",
+						"all"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzAwNTE0NTY0LCJleHAiOjE3MDA1MTgxNjQsIm5iZiI6MTcwMDUxNDU2NCwianRpIjoiYzN1YVQ4eVBabHJJbmVkcSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Enr0BFimnx2YBKelfPPkc74cgKSCAiRMjPab3rB9FOc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "operatorCreateAttribute",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/entitiyOperator/create?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzAwNTE0NTY0LCJleHAiOjE3MDA1MTgxNjQsIm5iZiI6MTcwMDUxNDU2NCwianRpIjoiYzN1YVQ4eVBabHJJbmVkcSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Enr0BFimnx2YBKelfPPkc74cgKSCAiRMjPab3rB9FOc&name=Birthdate &type=Date&entity_id=1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"entitiyOperator",
+						"create"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzAwNTE0NTY0LCJleHAiOjE3MDA1MTgxNjQsIm5iZiI6MTcwMDUxNDU2NCwianRpIjoiYzN1YVQ4eVBabHJJbmVkcSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Enr0BFimnx2YBKelfPPkc74cgKSCAiRMjPab3rB9FOc"
+						},
+						{
+							"key": "name",
+							"value": "Birthdate "
+						},
+						{
+							"key": "type",
+							"value": "Date"
+						},
+						{
+							"key": "entity_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "operatorCreateAttributeValues",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/entitiyOperator/attribute_value?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzAwNTE0NTY0LCJleHAiOjE3MDA1MTgxNjQsIm5iZiI6MTcwMDUxNDU2NCwianRpIjoiYzN1YVQ4eVBabHJJbmVkcSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Enr0BFimnx2YBKelfPPkc74cgKSCAiRMjPab3rB9FOc&name=Birthdate &type=Date&entity_id=1&attribute_ids[]=1&attribute_ids[]=2&values[]=ahmed&values[]=2-9-2000",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"entitiyOperator",
+						"attribute_value"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzAwNTE0NTY0LCJleHAiOjE3MDA1MTgxNjQsIm5iZiI6MTcwMDUxNDU2NCwianRpIjoiYzN1YVQ4eVBabHJJbmVkcSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Enr0BFimnx2YBKelfPPkc74cgKSCAiRMjPab3rB9FOc"
+						},
+						{
+							"key": "name",
+							"value": "Birthdate "
+						},
+						{
+							"key": "type",
+							"value": "Date"
+						},
+						{
+							"key": "entity_id",
+							"value": "1"
+						},
+						{
+							"key": "attribute_ids[]",
+							"value": "1"
+						},
+						{
+							"key": "attribute_ids[]",
+							"value": "2"
+						},
+						{
+							"key": "values[]",
+							"value": "ahmed"
+						},
+						{
+							"key": "values[]",
+							"value": "2-9-2000"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
