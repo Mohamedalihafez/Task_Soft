@@ -38,7 +38,7 @@ Route::group(['prefix' => 'entity', 'middleware' => ['jwt.verify','check.admin']
     Route::get('/all', [EntityController::class, 'all'])->name('entity.getall');
 });
 
-Route::group(['prefix' => 'attributes', 'middleware' => ['jwt.verify','check.admin']], function() {
+Route::group(['prefix' => 'attribute', 'middleware' => ['jwt.verify','check.admin']], function() {
     Route::post('/create', [AttributeController::class, 'create'])->name('attribute.create');
     Route::put('/update', [AttributeController::class, 'update'])->name('attribute.update');
     Route::delete('/delete', [AttributeController::class, 'delete'])->name('attribute.delete');

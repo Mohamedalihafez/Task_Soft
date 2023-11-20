@@ -45,6 +45,15 @@ class Entity extends Model
         return $entity; 
     }
 
+    
+    static function getEntity($request)
+    {
+        $entity = Entity::find($request->id);
+
+        return $entity; 
+    }
+
+
     static function deleteEntity($request)
     {
         $entity = Entity::find($request->id);

@@ -70,6 +70,10 @@ class User extends Authenticatable implements JWTSubject{
 
     static function createUser( $request)
     {
+        $request->merge([
+            'role_id' => OPERATOR
+        ]);
+        
         $user = User::create($request->all());
 
         return $user; 

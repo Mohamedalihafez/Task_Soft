@@ -62,9 +62,8 @@ class AttributeRequest extends FormRequest
     {
         return [
             'id' => ['required'],
-            'name' => ['required', 'regex:/^([a-zA-Z]+)(\s[a-zA-Z]+)*$/', 'max:20'],
-            'type' => ['required',Rule::in('String','Date','Float','Integer')],
-
+            'name' => [ 'regex:/^([a-zA-Z]+)(\s[a-zA-Z]+)*$/', 'max:20'],
+            'type' => [Rule::in('String','Date','Float','Integer')],
         ];
     }
 
