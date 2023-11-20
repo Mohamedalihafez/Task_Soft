@@ -47,7 +47,6 @@ class UserController extends Controller
         return $this->result(200,$user);
     }
 
-    
     public function all(Request $request)
     {
         $users = User::filter($request->all())->paginate(20);
